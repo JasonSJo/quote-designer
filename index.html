@@ -13,7 +13,10 @@
     line-height: 1.5;
     padding: 24px;
   }
-  .app { max-width: 1280px; margin: 0 auto; }
+  .app {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
   header {
     background: #fff;
     border: 1px solid rgba(0,0,0,0.08);
@@ -26,8 +29,17 @@
     flex-wrap: wrap;
     gap: 12px;
   }
-  header h1 { font-size: 18px; font-weight: 500; }
-  header .meta { font-size: 13px; color: #5f5e5a; display: flex; gap: 16px; flex-wrap: wrap; }
+  header h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  header .meta {
+    font-size: 13px;
+    color: #5f5e5a;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
   header input {
     border: 1px solid rgba(0,0,0,0.15);
     border-radius: 6px;
@@ -37,18 +49,34 @@
     background: #fff;
     width: 140px;
   }
-  .layout { display: grid; grid-template-columns: 1fr 420px; gap: 16px; }
-  @media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } }
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 16px;
+  }
+  @media (max-width: 1000px) {
+    .layout { grid-template-columns: 1fr; }
+  }
   .panel {
     background: #fff;
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 12px;
     padding: 20px;
   }
-  .panel h2 { font-size: 15px; font-weight: 500; margin-bottom: 12px; }
-  .filter-row { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .panel h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .filter-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
   .filter-row input, .filter-row select {
-    flex: 1; min-width: 120px;
+    flex: 1;
+    min-width: 120px;
     border: 1px solid rgba(0,0,0,0.15);
     border-radius: 6px;
     padding: 8px 10px;
@@ -56,13 +84,39 @@
     font-family: inherit;
     background: #fff;
   }
-  .catalog { max-height: 360px; overflow-y: auto; border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; }
-  .catalog table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .catalog th, .catalog td { padding: 8px 10px; text-align: left; border-bottom: 1px solid rgba(0,0,0,0.06); }
-  .catalog th { background: #f5f5f1; font-weight: 500; position: sticky; top: 0; color: #5f5e5a; font-size: 12px; }
+  .catalog {
+    max-height: 360px;
+    overflow-y: auto;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 8px;
+  }
+  .catalog table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .catalog th, .catalog td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .catalog th {
+    background: #f5f5f1;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    color: #5f5e5a;
+    font-size: 12px;
+  }
   .catalog td.num { text-align: right; font-variant-numeric: tabular-nums; }
   .catalog tr:hover { background: #faf9f4; }
-  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+  }
   .badge-weekday { background: #EEEDFE; color: #3C3489; }
   .badge-weekend { background: #E1F5EE; color: #0F6E56; }
   button {
@@ -82,13 +136,47 @@
   button.danger { color: #A32D2D; border-color: rgba(163,45,45,0.3); }
   button.danger:hover { background: #FCEBEB; }
   .selected-list { display: flex; flex-direction: column; gap: 10px; }
-  .selected-empty { padding: 28px 16px; text-align: center; color: #888780; font-size: 13px; background: #f5f5f1; border-radius: 8px; }
-  .item { border: 1px solid rgba(0,0,0,0.08); border-radius: 8px; padding: 12px; background: #fff; }
-  .item-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
-  .item-title { font-size: 14px; font-weight: 500; }
-  .item-sub { font-size: 12px; color: #5f5e5a; margin-top: 2px; }
-  .item-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 12px; }
-  .ctrl label { display: block; color: #5f5e5a; margin-bottom: 4px; font-size: 11px; }
+  .selected-empty {
+    padding: 28px 16px;
+    text-align: center;
+    color: #888780;
+    font-size: 13px;
+    background: #f5f5f1;
+    border-radius: 8px;
+  }
+  .item {
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 12px;
+    background: #fff;
+  }
+  .item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .item-title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .item-sub {
+    font-size: 12px;
+    color: #5f5e5a;
+    margin-top: 2px;
+  }
+  .item-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    font-size: 12px;
+  }
+  .ctrl label {
+    display: block;
+    color: #5f5e5a;
+    margin-bottom: 4px;
+    font-size: 11px;
+  }
   .ctrl select, .ctrl input {
     width: 100%;
     border: 1px solid rgba(0,0,0,0.15);
@@ -107,9 +195,20 @@
     font-size: 13px;
     font-variant-numeric: tabular-nums;
   }
-  .summary-card { background: #faf9f4; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
+  .summary-card {
+    background: #faf9f4;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
   .row { display: flex; justify-content: space-between; align-items: center; padding: 4px 0; font-size: 13px; }
-  .row.total { border-top: 1px solid rgba(0,0,0,0.1); margin-top: 8px; padding-top: 10px; font-weight: 500; font-size: 15px; }
+  .row.total {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: 8px;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+  }
   .row .num { font-variant-numeric: tabular-nums; }
   .scholar-input { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
   .scholar-input input {
@@ -123,28 +222,97 @@
     font-variant-numeric: tabular-nums;
   }
   .scholar-input span { font-size: 12px; color: #5f5e5a; }
-  .toolbar { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .toolbar {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
   .toolbar button { flex: 1; padding: 8px 12px; font-size: 13px; }
-  .package-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 8px; }
-  .package-table td, .package-table th { padding: 4px 6px; text-align: right; border-bottom: 1px solid rgba(0,0,0,0.05); }
+  .package-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-top: 8px;
+  }
+  .package-table td, .package-table th {
+    padding: 4px 6px;
+    text-align: right;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
   .package-table th { color: #888780; font-weight: 500; text-align: center; }
   .package-table td:first-child { text-align: center; color: #5f5e5a; }
   details { margin-top: 8px; }
   details summary { cursor: pointer; font-size: 12px; color: #5f5e5a; padding: 4px 0; }
-  .footer-note { margin-top: 16px; font-size: 11px; color: #888780; text-align: center; }
+  .footer-note {
+    margin-top: 16px;
+    font-size: 11px;
+    color: #888780;
+    text-align: center;
+  }
+  .info-section {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 16px;
+  }
+  .info-section h2 {
+    font-size: 15px; font-weight: 500; margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  .info-section h3 {
+    font-size: 13px; font-weight: 500;
+    margin: 14px 0 8px;
+    color: #534AB7;
+  }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; font-size: 12px; }
+  @media (max-width: 700px) { .info-grid { grid-template-columns: 1fr; } }
+  .info-grid .item-row { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px dashed rgba(0,0,0,0.05); }
+  .info-grid .item-row span:first-child { color: #5f5e5a; }
+  .info-grid .item-row span:last-child { font-variant-numeric: tabular-nums; }
+  .info-section p, .info-section li { font-size: 12px; line-height: 1.7; color: #444441; }
+  .info-section ul { padding-left: 18px; margin: 4px 0; }
+  .info-section textarea {
+    width: 100%;
+    min-height: 70px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-family: inherit;
+    line-height: 1.6;
+    resize: vertical;
+    background: #faf9f4;
+  }
+  .mentor-card {
+    background: #faf9f4;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+  .mentor-card strong { font-weight: 500; color: #2c2c2a; }
+  .mentor-card .contact { color: #5f5e5a; margin-top: 2px; }
   @media print {
-    body { background: #fff; padding: 0; }
+    body { background: #fff; padding: 0; font-size: 11px; }
     .panel-catalog, .toolbar, button { display: none !important; }
     .layout { grid-template-columns: 1fr; }
+    .info-section { page-break-inside: avoid; }
+    textarea { border: none !important; background: #fff !important; }
   }
 </style>
 </head>
 <body>
 <div class="app">
+
 <header>
   <div>
     <h1>SBS아카데미 견적 설계</h1>
-    <div class="meta"><span>과목별 / 개월별 / 장학지원 자동 계산</span></div>
+    <div class="meta">
+      <span>과목별 / 개월별 / 장학지원 자동 계산</span>
+    </div>
   </div>
   <div class="meta">
     <label>상담자 <input id="counselor" placeholder="이름"></label>
@@ -152,7 +320,9 @@
     <label>견적일 <input id="quoteDate" type="date"></label>
   </div>
 </header>
+
 <div class="layout">
+
   <div class="panel panel-catalog">
     <h2>과목 카탈로그</h2>
     <div class="filter-row">
@@ -171,14 +341,26 @@
     </div>
     <div class="catalog">
       <table id="catalogTable">
-        <thead><tr><th>구분</th><th>과 목 명</th><th>시 간</th><th class="num">원 수강료</th><th></th></tr></thead>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>과 목 명</th>
+            <th>시 간</th>
+            <th class="num">원 수강료</th>
+            <th></th>
+          </tr>
+        </thead>
         <tbody></tbody>
       </table>
     </div>
     <details>
       <summary>패키지 할인 표 보기</summary>
       <table class="package-table">
-        <thead><tr><th>개월</th><th>패키지</th><th>유료(개월)</th><th>무료(개월)</th></tr></thead>
+        <thead>
+          <tr>
+            <th>개월</th><th>패키지</th><th>유료(개월)</th><th>무료(개월)</th>
+          </tr>
+        </thead>
         <tbody>
           <tr><td>1</td><td>-</td><td>1</td><td>0</td></tr>
           <tr><td>2</td><td>-</td><td>2</td><td>0</td></tr>
@@ -194,9 +376,11 @@
       </table>
     </details>
   </div>
+
   <div class="panel">
     <h2>선택된 과목</h2>
     <div id="selected" class="selected-list"></div>
+
     <h2 style="margin-top:20px;">합계</h2>
     <div class="summary-card">
       <div class="row"><span>과목 수</span><span class="num" id="sumCount">0</span></div>
@@ -204,23 +388,119 @@
       <div class="row"><span>월 평균 수강료</span><span class="num" id="sumMonthly">₩0</span></div>
       <div class="row" style="color:#5f5e5a; font-size:12px;"><span>총 개월 (가중평균)</span><span class="num" id="sumMonths">0</span></div>
     </div>
+
     <div class="summary-card">
       <div class="row"><span>장학지원 패키지</span></div>
-      <div class="scholar-input"><input id="scholarship" type="number" min="0" value="0" step="10000"><span>원</span></div>
+      <div class="scholar-input">
+        <input id="scholarship" type="number" min="0" value="0" step="10000">
+        <span>원</span>
+      </div>
       <div class="row"><span>교육상품권</span></div>
-      <div class="scholar-input"><input id="voucher" type="number" min="0" value="0" step="10000"><span>원</span></div>
+      <div class="scholar-input">
+        <input id="voucher" type="number" min="0" value="0" step="10000">
+        <span>원</span>
+      </div>
       <div class="row total"><span>최종 수강료</span><span class="num" id="finalAmount">₩0</span></div>
     </div>
+
     <div class="toolbar">
       <button onclick="resetAll()">초기화</button>
       <button onclick="exportJSON()">JSON 내보내기</button>
       <button class="primary" onclick="window.print()">인쇄 / PDF</button>
     </div>
   </div>
+
 </div>
-<div class="footer-note">데이터 기반: SBS아카데미 #10 자동화 견적서 · 단가/패키지 표 자동 적용</div>
+
+<div class="info-section">
+  <h2>● 온라인 강좌</h2>
+  <div class="info-grid">
+    <div class="item-row"><span>따즈아</span><span>1개월 · 무료지원</span></div>
+    <div class="item-row"><span>온라인 강좌 추가</span><span>견적 협의</span></div>
+  </div>
 </div>
+
+<div class="info-section">
+  <h2>● 신용카드 할부 사항</h2>
+  <h3>전체 할부</h3>
+  <div class="info-grid">
+    <div class="item-row"><span>롯데</span><span>최대할부 12개월 / -</span></div>
+    <div class="item-row"><span>삼성</span><span>최대할부 6개월 / 무이자 6개월</span></div>
+    <div class="item-row"><span>신한</span><span>최대할부 12개월 / 무이자 3개월</span></div>
+    <div class="item-row"><span>현대</span><span>최대할부 24개월 / 무이자 3개월</span></div>
+    <div class="item-row"><span>국민</span><span>최대할부 18개월 / 무이자 3개월</span></div>
+    <div class="item-row"><span>하나</span><span>최대할부 18개월 / -</span></div>
+    <div class="item-row"><span>농협</span><span>최대할부 24개월 / 무이자 3개월</span></div>
+    <div class="item-row"><span>비씨</span><span>최대할부 6개월 / 무이자 3개월</span></div>
+    <div class="item-row"><span>우리</span><span>최대할부 24개월 / 무이자 3개월</span></div>
+  </div>
+  <h3>부분 무이자 (이자 부담)</h3>
+  <div class="info-grid">
+    <div class="item-row"><span>국민</span><span>6개월 (3개월) / 10개월 (5개월)</span></div>
+    <div class="item-row"><span>현대</span><span>10개월 (5개월) / 12개월 (6개월)</span></div>
+    <div class="item-row"><span>농협</span><span>4~6개월 (2개월) / 12개월 (4개월)</span></div>
+    <div class="item-row"><span>하나, 우리</span><span>10개월 (4개월) / 12개월 (5개월)</span></div>
+  </div>
+</div>
+
+<div class="info-section">
+  <h2>● 결제 안내</h2>
+  <textarea id="paymentInfo">· 무통장 입금 시 입금자명을 수강생명으로 기재해 주세요.
+· 카드 결제는 학원 데스크 또는 사전 협의 후 가능합니다.
+· 분할 납부는 위 신용카드 할부 사항을 참고해 주세요.
+· 입금 계좌: (입력 필요)
+· 입금 후 담당자에게 확인 부탁드립니다.</textarea>
+</div>
+
+<div class="info-section">
+  <h2>● 수강 안내</h2>
+  <textarea id="enrollInfo">· 개강일 기준 7일 전까지 등록을 완료해 주세요.
+· 수강 시 출결 관리는 본인 책임이며, 무단 결석 시 보강이 어려울 수 있습니다.
+· 실습 장비는 학원에서 제공되며, 자습실은 운영 시간 내 자유롭게 이용 가능합니다.
+· 세미나 및 취업/진학 면담은 사전 신청 후 진행됩니다.
+· 자세한 내용은 담당 멘토에게 문의해 주세요.</textarea>
+</div>
+
+<div class="info-section">
+  <h2>● 환불 규정</h2>
+  <textarea id="refundInfo">· 학원의 설립·운영 및 과외교습에 관한 법률 시행령 제18조에 의거 환불됩니다.
+· 개강 전: 납부한 수강료 전액 환불.
+· 총 수강시간 1/3 경과 전: 수강료의 2/3 환불.
+· 총 수강시간 1/2 경과 전: 수강료의 1/2 환불.
+· 총 수강시간 1/2 경과 후: 환불 불가.
+· 교육상품권 및 장학지원 적용분은 환불 대상에서 차감됩니다.
+· 자세한 사항은 학원 데스크 또는 담당 멘토에게 문의해 주세요.</textarea>
+</div>
+
+<div class="info-section">
+  <h2>● 멘토의 당부 드리는 말</h2>
+  <textarea id="mentorMessage">취업과 진학을 위한 가장 큰 자산은 꾸준한 출석과 포트폴리오 완성도입니다.
+강의 시간 외 자습실을 적극 활용해 주시고, 막히는 부분이 있을 때는 언제든 멘토에게 편하게 질문해 주세요.
+함께 좋은 결과 만들어가겠습니다.</textarea>
+</div>
+
+<div class="info-section">
+  <h2>● 멘토 연락처</h2>
+  <div class="mentor-card">
+    <strong>한승보 멘토</strong> · 2-1팀 교육담당
+    <div class="contact">T. 051-714-2896 · H. 010-8101-4044 · E. aluvs@koreaedugroup.com</div>
+  </div>
+  <div class="mentor-card">
+    <strong>이시혁 멘토</strong> · 2-1팀 교육담당
+    <div class="contact">T. 051-714-2996 · H. 010-9720-5772 · E. hehehesh@koreaedugroup.com</div>
+  </div>
+  <div class="mentor-card">
+    <strong>조상래 멘토</strong> · 2-1팀 교육담당
+    <div class="contact">T. 051-714-2998 · H. 010-2112-6139 · E. jason97@koreaedugroup.com</div>
+  </div>
+</div>
+
+<div class="footer-note">데이터 기반: SBS아카데미 #10 자동화 견적서 · 단가/패키지/할부/멘토 정보 자동 반영 · 결제·수강·환불·멘토 당부는 자유 편집 가능</div>
+
+</div>
+
 <script>
+// 패키지 룰 - 개월수에 따라 (paidMonths, freeMonths)
 const PACKAGES = {
   1: { paid: 1, free: 0, label: '-' },
   2: { paid: 2, free: 0, label: '-' },
@@ -233,7 +513,10 @@ const PACKAGES = {
   18: { paid: 11, free: 7, label: '11+7' },
   24: { paid: 14, free: 10, label: '14+10' }
 };
+
+// 과목 카탈로그 (견적서 원본 데이터에서 추출)
 const CATALOG = [
+  // 평일 - weekday
   {n:'A게임아트웍', t:'월수금 월수 (3H)', p:650000, type:'weekday'},
   {n:'B게임아트웍', t:'화목화 목금 (3H)', p:650000, type:'weekday'},
   {n:'A기초드로잉', t:'월수금 월수 (2H)', p:550000, type:'weekday'},
@@ -262,6 +545,7 @@ const CATALOG = [
   {n:'언리얼', t:'월화수 목금 (2H)', p:750000, type:'weekday'},
   {n:'게임기획', t:'월화수 목금 (2H)', p:750000, type:'weekday'},
   {n:'(비대면)도트애니메이션', t:'수목금 (2H)', p:550000, type:'weekday'},
+  // 주말 - weekend
   {n:'일러스트(주말)', t:'일 (4H)', p:450000, type:'weekend'},
   {n:'이모티콘', t:'일 (4H)', p:450000, type:'weekend'},
   {n:'게임원화s', t:'토 (4H)', p:450000, type:'weekend'},
@@ -288,11 +572,14 @@ const CATALOG = [
   {n:"(비대면)게임QA", t:'일 (4H)', p:600000, type:'weekend'},
   {n:'(비대면)웹드라마', t:'토 (4H)', p:500000, type:'weekend'}
 ];
+
 const MONTHS_OPTIONS = [1,2,3,4,6,8,10,12,18,24];
 const state = { items: [], scholarship: 0, voucher: 0 };
 let nextId = 1;
+
 const $ = id => document.getElementById(id);
 const krw = v => '₩' + Math.round(v).toLocaleString('ko-KR');
+
 function getFiltered() {
   const q = $('search').value.trim().toLowerCase();
   const type = $('filterType').value;
@@ -307,6 +594,7 @@ function getFiltered() {
   else if (sort === 'name') list.sort((a,b) => a.n.localeCompare(b.n, 'ko'));
   return list;
 }
+
 function renderCatalog() {
   const tbody = $('catalogTable').querySelector('tbody');
   const list = getFiltered();
@@ -320,6 +608,7 @@ function renderCatalog() {
     </tr>
   `).join('');
 }
+
 function calcItem(item) {
   const pkg = PACKAGES[item.months];
   if (!pkg) return { total: 0, monthly: 0, label: '-' };
@@ -327,6 +616,7 @@ function calcItem(item) {
   const monthly = total / item.months;
   return { total, monthly, label: pkg.label, paid: pkg.paid, free: pkg.free };
 }
+
 function renderSelected() {
   const root = $('selected');
   if (state.items.length === 0) {
@@ -367,6 +657,7 @@ function renderSelected() {
   }).join('');
   updateSummary();
 }
+
 function updateSummary() {
   const total = state.items.reduce((s, i) => s + calcItem(i).total, 0);
   const monthsWeighted = state.items.reduce((s, i) => s + i.months, 0);
@@ -378,31 +669,63 @@ function updateSummary() {
   const final = Math.max(0, total - (state.scholarship || 0) - (state.voucher || 0));
   $('finalAmount').textContent = krw(final);
 }
+
 function addItem(name) {
   const c = CATALOG.find(c => c.n === name);
   if (!c) return;
-  state.items.push({ id: nextId++, name: c.n, time: c.t, basePrice: c.p, months: 2 });
+  state.items.push({
+    id: nextId++,
+    name: c.n,
+    time: c.t,
+    basePrice: c.p,
+    months: 2
+  });
   renderSelected();
 }
-function removeItem(id) { state.items = state.items.filter(i => i.id !== id); renderSelected(); }
-function updateMonths(id, v) { const item = state.items.find(i => i.id === id); if (item) { item.months = parseInt(v); renderSelected(); } }
-function updatePrice(id, v) { const item = state.items.find(i => i.id === id); if (item) { item.basePrice = parseInt(v) || 0; renderSelected(); } }
+
+function removeItem(id) {
+  state.items = state.items.filter(i => i.id !== id);
+  renderSelected();
+}
+
+function updateMonths(id, v) {
+  const item = state.items.find(i => i.id === id);
+  if (item) { item.months = parseInt(v); renderSelected(); }
+}
+
+function updatePrice(id, v) {
+  const item = state.items.find(i => i.id === id);
+  if (item) { item.basePrice = parseInt(v) || 0; renderSelected(); }
+}
+
 function resetAll() {
   if (state.items.length && !confirm('모든 과목을 비우시겠습니까?')) return;
-  state.items = []; state.scholarship = 0; state.voucher = 0;
-  $('scholarship').value = 0; $('voucher').value = 0;
+  state.items = [];
+  state.scholarship = 0;
+  state.voucher = 0;
+  $('scholarship').value = 0;
+  $('voucher').value = 0;
   renderSelected();
 }
+
 function exportJSON() {
   const data = {
-    counselor: $('counselor').value, manager: $('manager').value, quoteDate: $('quoteDate').value,
+    counselor: $('counselor').value,
+    manager: $('manager').value,
+    quoteDate: $('quoteDate').value,
     items: state.items.map(i => {
       const r = calcItem(i);
-      return { name: i.name, time: i.time, basePrice: i.basePrice, months: i.months, package: r.label, total: r.total, monthly: Math.round(r.monthly) };
+      return { name: i.name, time: i.time, basePrice: i.basePrice, months: i.months,
+               package: r.label, total: r.total, monthly: Math.round(r.monthly) };
     }),
-    scholarship: state.scholarship, voucher: state.voucher,
+    scholarship: state.scholarship,
+    voucher: state.voucher,
     total: state.items.reduce((s, i) => s + calcItem(i).total, 0),
-    final: Math.max(0, state.items.reduce((s, i) => s + calcItem(i).total, 0) - state.scholarship - state.voucher)
+    final: Math.max(0, state.items.reduce((s, i) => s + calcItem(i).total, 0) - state.scholarship - state.voucher),
+    paymentInfo: $('paymentInfo').value,
+    enrollInfo: $('enrollInfo').value,
+    refundInfo: $('refundInfo').value,
+    mentorMessage: $('mentorMessage').value
   };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
   const a = document.createElement('a');
@@ -410,14 +733,21 @@ function exportJSON() {
   a.download = `quote_${new Date().toISOString().slice(0,10)}.json`;
   a.click();
 }
+
+// Wire up events
 $('search').addEventListener('input', renderCatalog);
 $('filterType').addEventListener('change', renderCatalog);
 $('sortBy').addEventListener('change', renderCatalog);
 $('scholarship').addEventListener('input', e => { state.scholarship = parseInt(e.target.value) || 0; updateSummary(); });
 $('voucher').addEventListener('input', e => { state.voucher = parseInt(e.target.value) || 0; updateSummary(); });
+
+// Default date
 $('quoteDate').valueAsDate = new Date();
+
+// Initial render
 renderCatalog();
 renderSelected();
 </script>
+
 </body>
 </html>
